@@ -6,6 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 import seaborn as sns 
 import nltk
+nltk.download('punkt_tab')
 import regex as re
 from nltk.corpus import stopwords 
 from nltk.stem.porter import PorterStemmer
@@ -13,8 +14,6 @@ from collections import Counter
 from sklearn.feature_extraction.text import CountVectorizer,TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score , classification_report ,confusion_matrix,precision_score
-
-nltk.download('punkt_tab')
 
 def Text_preprocessing(text):
     text =  text.lower()  
