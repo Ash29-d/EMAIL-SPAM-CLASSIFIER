@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 import nltk
 nltk.download('punkt_tab')
+nltk.download('stopwords')
 import regex as re
 from nltk.corpus import stopwords 
 from nltk.stem.porter import PorterStemmer
